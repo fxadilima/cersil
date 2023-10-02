@@ -6,7 +6,7 @@ snippet: >
     oleh Fresh. Baca selanjutnya...
 ---
 
-Layout dan Router untuk halaman blogging ini dikerjakan dengan sangat rapi
+Layout dan Router untuk halaman blogging ini dikerjakan dengan sangat rapi 
 oleh Fresh. Dalam rangkaian kerja ini kita mengabaikan deno-gfm[^deno-gfm], dan 
 menggunakan Markdown-It untuk membuat _footnotes_.
 
@@ -21,10 +21,7 @@ for await (const item of Deno.readDir("./public")) {
 } 
 ```
 
-
 [^deno-gfm]: Plugin ini adalah sebuah fasilitas yang disediakan Deno, tetapi sepertinya
     tidak tersedia plugin siap pakai untuk membuat _footnotes_, yang kita perlukan untuk
     pekerjaan kita.
-
-
 
