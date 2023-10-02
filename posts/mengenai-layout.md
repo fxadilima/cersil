@@ -7,7 +7,7 @@ snippet: >
 ---
 
 Layout dan Router untuk halaman blogging ini dikerjakan dengan sangat rapi
-oleh Fresh. Dalam rangkaian kerja ini kita mengabaikan deno-gfm[^deno-gfm], dan
+oleh Fresh. Dalam rangkaian kerja ini kita mengabaikan deno-gfm[^deno-gfm], dan 
 menggunakan Markdown-It untuk membuat _footnotes_.
 
 Berikut ini adalah test untuk _syntax highlighting_.
@@ -15,9 +15,9 @@ Berikut ini adalah test untuk _syntax highlighting_.
 JavaScript adalah semacam ini:
 
 ```js
-for await (const item of Deno.readDir("./public")) {
-    // lakukan sesuatu dengan item itu
-}
+for await (const item of Deno.readDir("./public")) { 
+    // lakukan sesuatu dengan item itu 
+} 
 ```
 
 
