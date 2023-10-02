@@ -15,7 +15,7 @@ export const handler: Handlers<Post> = {
 }};
 
 export default function PostPage(props: PageProps<Post>) {
-    const converter = PreactHTMLConverter();
+    //const converter = PreactHTMLConverter();
     const md = new MarkdownIt({
         highlight: function (str, lang) {
             if (lang && hljs.getLanguage(lang)) {
@@ -23,12 +23,11 @@ export default function PostPage(props: PageProps<Post>) {
                     return `<div class="w3-panel w3-padding-16 w3-border w3-round">${hljs.highlight(str, { language: lang }).value}</div>`;
                 } catch (__) {}
             }
-        
             return ''; // use external default escaping
         }
     }).use(MarkdownItFootnote);
     const post = props.data;
-    const html = md.render(post.content);
+    //const html = md.render(post.content);
     return (
         <main class="w3-main w3-padding-32">
             <div class="w3-content">
@@ -42,9 +41,7 @@ export default function PostPage(props: PageProps<Post>) {
                     })}
                     </time>
                 </header> 
-                <div class="w3-container">
-                    {converter.convert(html)}
-                </div>
+                <div class="w3-container" dangerouslySetInnerHTML={{__html: md.render(post.content)}}/>
             </div>
         </main>
     )
