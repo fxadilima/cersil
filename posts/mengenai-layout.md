@@ -1,6 +1,6 @@
 ---
 title: Layout Untuk Blog
-published_at: 2023-10-02T03:37:58.030Z
+published_at: 2023-10-02T03:37:58.030+07:00
 snippet: >
     Layout dan Router untuk halaman blogging ini dikerjakan dengan sangat rapi
     oleh Fresh. Baca selanjutnya...

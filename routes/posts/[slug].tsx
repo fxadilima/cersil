@@ -34,10 +34,17 @@ export default function PostPage(props: PageProps<Post>) {
                 <header class="w3-container">
                     <h1>{post.title}</h1>
                     <time>
-                    {new Date(post.publishedAt).toLocaleDateString("en-us", {
+                    {new Date(post.publishedAt).toLocaleString("id-ID", {
+                        weekday: "long",
                         year: "numeric",
                         month: "long",
-                        day: "numeric"
+                        day: "numeric",
+                        timeZone: "Asia/Jakarta",
+                        timeZoneName: "short",
+                        hour12: false,
+                        hour: 'numeric',
+                        minute: 'numeric',
+                        second: 'numeric'
                     })}
                     </time>
                 </header> 

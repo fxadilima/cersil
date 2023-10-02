@@ -1,6 +1,6 @@
 ---
 title: Catatan Untuk Mulai
-published_at: 2023-10-02T00:37:00.000Z
+published_at: 2023-10-02T00:37:00.000+07:00
 snippet: >
     Sebaiknya membaca catatan kecil ini untuk mulai membuat website dengan Fresh.
     Ini tidak terlalu sulit, hanya saja banyak yang tidak kita perlukan. Dan tentu

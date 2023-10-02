@@ -28,10 +28,17 @@ function PostCard(props: { post: Post }) {
             <a href={`/posts/${post.slug}`}>
                 <h3>{post.title}</h3>
                 <time class="w3-text-blue">{
-                    new Date(post.publishedAt).toLocaleDateString("en-us", {
+                    new Date(post.publishedAt).toLocaleDateString("id-ID", {
+                        weekday: "long",
                         year: "numeric",
                         month: "long",
                         day: "numeric",
+                        timeZone: "Asia/Jakarta",
+                        timeZoneName: "short",
+                        hour12: false,
+                        hour: 'numeric',
+                        minute: 'numeric',
+                        second: 'numeric'
                     })
                 }
                 </time>
