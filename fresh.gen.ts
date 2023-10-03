@@ -6,11 +6,15 @@ import * as $0 from "./routes/_404.tsx";
 import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_layout.tsx";
 import * as $3 from "./routes/about.tsx";
-import * as $4 from "./routes/api/joke.ts";
-import * as $5 from "./routes/index.tsx";
-import * as $6 from "./routes/posts/[slug].tsx";
-import * as $7 from "./routes/posts/index.tsx";
-import * as $8 from "./routes/test1.tsx";
+import * as $4 from "./routes/api/buku.ts";
+import * as $5 from "./routes/api/joke.ts";
+import * as $6 from "./routes/index.tsx";
+import * as $7 from "./routes/memanah-rajawali/[slug].tsx";
+import * as $8 from "./routes/memanah-rajawali/_layout.tsx";
+import * as $9 from "./routes/memanah-rajawali/index.tsx";
+import * as $10 from "./routes/posts/[slug].tsx";
+import * as $11 from "./routes/posts/index.tsx";
+import * as $12 from "./routes/test1.tsx";
 
 const manifest = {
   routes: {
@@ -18,11 +22,15 @@ const manifest = {
     "./routes/_app.tsx": $1,
     "./routes/_layout.tsx": $2,
     "./routes/about.tsx": $3,
-    "./routes/api/joke.ts": $4,
-    "./routes/index.tsx": $5,
-    "./routes/posts/[slug].tsx": $6,
-    "./routes/posts/index.tsx": $7,
-    "./routes/test1.tsx": $8,
+    "./routes/api/buku.ts": $4,
+    "./routes/api/joke.ts": $5,
+    "./routes/index.tsx": $6,
+    "./routes/memanah-rajawali/[slug].tsx": $7,
+    "./routes/memanah-rajawali/_layout.tsx": $8,
+    "./routes/memanah-rajawali/index.tsx": $9,
+    "./routes/posts/[slug].tsx": $10,
+    "./routes/posts/index.tsx": $11,
+    "./routes/test1.tsx": $12,
   },
   islands: {},
   baseUrl: import.meta.url,

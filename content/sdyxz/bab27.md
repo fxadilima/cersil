@@ -1041,7 +1041,7 @@ tidak seberbahaya yang ada di gurun Mongolia. Guo Jing menilai situasi mereka de
 "Kita tidak bisa," desah Huang Rong, "Mereka mungkin melempari kami dengan batu. Ini jalan buntu."
 
 Guo Jing ragu-ragu. Entah bagaimana, di ambang situasi hidup dan mati ia tiba-tiba teringat suatu bagian dalam Jiu Yin Zhen Jing, ia berkata, "Rong'er, ada bagian dalam kitab itu tentang 
-[Yi Hun Da Fa](referemsi-karakter.md#yi-hun-da-fa "Yi Hun Da Fa (移魂大法), Metode untuk menggerakkan jiwa, semacam ilmu hipnotis"), aku yakin ini mirip dengan 
+[Yi Hun Da Fa](referensi-karakter.md#yi-hun-da-fa "Yi Hun Da Fa (移魂大法), Metode untuk menggerakkan jiwa, semacam ilmu hipnotis"), aku yakin ini mirip dengan 
 [She Xin Fa](referensi-karakter.md#she-xin-fa "She Xin Fa (摄心法), hampir sama seperti Yi Hun Da Fa, ilmu hipnotis") yang baru 
 saja kau sebutkan... Baiklah, ayo kita taruhan, kita turun ke jurang bersama-sama."
 

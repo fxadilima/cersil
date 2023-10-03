@@ -6,7 +6,6 @@ import hljs from "https://esm.sh/highlight.js@11.8.0";
 import MarkdownIt from 'markdown-it';
 import MarkdownItFootnote from 'markdown-it-footnote';
 import {h, Component} from 'preact';
-import {PreactHTMLConverter} from 'preact-html-converter';
 
 export const handler: Handlers<Post> = {
     async GET(_req, ctx) {
