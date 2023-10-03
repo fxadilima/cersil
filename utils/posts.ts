@@ -13,7 +13,6 @@ export async function getPosts(): Promise<Post[]> {
     const files = Deno.readDir(Deno.cwd() + "/posts");
     const promises = [];
     for await (const file of files) {
-        console.log(`getPosts: found ${file.name}`);
         const slug = file.name.replace(".md", "");
         promises.push(getPost(slug));
     }
@@ -24,10 +23,7 @@ export async function getPosts(): Promise<Post[]> {
 
 export async function getPost(slug: string): Promise<Post | null> {
     const real_path = Deno.cwd() + "/posts/" + slug;
-    console.log(`getPost: reading ${real_path}.md`);
-    console.log("Inputs: " + join(`${Deno.cwd()}/posts`, `${slug}.md`));
     const text = await Deno.readTextFile(join(`${Deno.cwd()}/posts`, `${slug}.md`));
-    console.log(`Post:\n${text}`);
     const { attrs, body } = extract(text);
     return {
         slug,
@@ -37,4 +33,3 @@ export async function getPost(slug: string): Promise<Post | null> {
         snippet: attrs.snippet,
     };
 }
-

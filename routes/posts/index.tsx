@@ -1,10 +1,11 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { Post, getPosts } from '../../utils/posts.ts';
+import { RouteConfig } from "$fresh/server.ts";
 
 export const handler: Handlers<Post[]> = {
     async GET(_req, ctx) {
         const posts = await getPosts();
-        console.log(`handler: posts = ${JSON.stringify(posts)}`);
+        //console.log(`handler: posts = ${JSON.stringify(posts)}`);
         return ctx.render(posts);
     }
 };
@@ -12,12 +13,10 @@ export const handler: Handlers<Post[]> = {
 export default function BlogIndexPage(props: PageProps<Post[]>) {
     const posts = props.data;
     return (
-        <main class="w3-main w3-padding-32">
-            <div class="w3-content w3-container">
-                <h1>Blog</h1>
-                {posts.map((post) => <PostCard post={post} />)}
-            </div>
-        </main>
+        <div class="w3-content w3-container">
+            <h1>Blog Posts</h1>
+            {posts.map((post) => <PostCard post={post} />)}
+        </div>
     );
 }
 

@@ -16,6 +16,11 @@ const JOKES = [
 
 export const handler = (_req: Request, _ctx: HandlerContext): Response => {
   const randomIndex = Math.floor(Math.random() * JOKES.length);
-  const body = JOKES[randomIndex];
-  return new Response(body);
+  const body = `<h1>Jokes</h1><p>${JOKES[randomIndex]}</p><a href="/">Home</a> <a href="/posts">Blogs</a>`;
+  return new Response(body, {
+    status: 200,
+    headers: {
+      "content-type": "text/html"
+    }
+  });
 };

@@ -4,19 +4,25 @@
 
 import * as $0 from "./routes/_404.tsx";
 import * as $1 from "./routes/_app.tsx";
-import * as $2 from "./routes/api/joke.ts";
-import * as $3 from "./routes/index.tsx";
-import * as $4 from "./routes/posts/[slug].tsx";
-import * as $5 from "./routes/posts/index.tsx";
+import * as $2 from "./routes/_layout.tsx";
+import * as $3 from "./routes/about.tsx";
+import * as $4 from "./routes/api/joke.ts";
+import * as $5 from "./routes/index.tsx";
+import * as $6 from "./routes/posts/[slug].tsx";
+import * as $7 from "./routes/posts/index.tsx";
+import * as $8 from "./routes/test1.tsx";
 
 const manifest = {
   routes: {
     "./routes/_404.tsx": $0,
     "./routes/_app.tsx": $1,
-    "./routes/api/joke.ts": $2,
-    "./routes/index.tsx": $3,
-    "./routes/posts/[slug].tsx": $4,
-    "./routes/posts/index.tsx": $5,
+    "./routes/_layout.tsx": $2,
+    "./routes/about.tsx": $3,
+    "./routes/api/joke.ts": $4,
+    "./routes/index.tsx": $5,
+    "./routes/posts/[slug].tsx": $6,
+    "./routes/posts/index.tsx": $7,
+    "./routes/test1.tsx": $8,
   },
   islands: {},
   baseUrl: import.meta.url,
