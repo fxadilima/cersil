@@ -1,5 +1,11 @@
-import { Handlers } from "$fresh/server.ts";
+import { RouteConfig, Handlers } from "$fresh/server.ts";
+import { renderToString } from "preact-render-to-string";
 
+export const config: RouteConfig = {
+    skipInheritedLayouts: true, // Skip already inherited layouts
+};
+
+/*
 export const handler: Handlers = {
     async GET(_req, ctx) {
         const resp = await ctx.render();
@@ -7,6 +13,7 @@ export const handler: Handlers = {
         return resp;
     },
 };
+*/
 
 export default function IndexPage() {
     return (
