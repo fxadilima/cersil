@@ -98,7 +98,7 @@ ditangkap oleh suku Tatar bersama dengan putra Khabul Khan, yaitu Todo'en Otchig
 ketika melamar putri dari kepala suku Tatar untuk dikawinkan dengan putranya Qadaan Taishi.
 Ambaghai adalah paman dari Yesugai, ayah kandung Temujin.
 
-<details>
+<details class="w3-panel w3-border w3-round">
 <summary>📽 Cuplikan adegan Ambaghai mengalami penyiksaan fisik.</summary>
 
 <p>

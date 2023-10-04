@@ -4,29 +4,28 @@ import MarkdownIt from 'markdown-it';
 import MarkdownItFootnote from 'markdown-it-footnote';
 import {h, Component, createElement} from 'preact';
 import renderToSring from 'preact-render-to-string';
-import { extract } from "$std/front_matter/any.ts";
+import { extract } from "$std/front_matter/yaml.ts";
 
-export interface Props {
-    slug: string;
-    title: string;
-    author: string;
-    content: string;
-    description: string;
-    nextPage?: string;
-    prevPage?: string;
+interface Page {
+    markdown: string;
+//    data: Record<string, unknown>;
+    attrs: object;
 }
 
 export const handler: Handlers<Page> = {
     async GET(_req: Request, ctx: HandlerContext) {
         //console.log(`Slug: context = ${JSON.stringify(ctx)}`);
         //console.log(`ctx.params = ${JSON.stringify(ctx.params)}`);
+        //console.log(`Slug: ${ctx.params.slug}`);
         const realPath = Deno.cwd() + "/content/sdyxz/" + ctx.params.slug;
         //console.log(`realPath = ${realPath}`);
         try {
             const txt = await Deno.readTextFile(realPath);
-            const { attr, body } = extract(txt);
+            const { attrs, body } = extract(txt);
+            console.log(`Handler: attr => ${attrs}`);
             const retval = getHTMLString(body);
-            return ctx.render(retval);
+            //ctx.state = attrs;
+            return ctx.render({markdown: retval, attrs: attrs});
         }
         catch (err) {
             console.log(`Slug handler for SDYXZ: ${err}`);
@@ -35,10 +34,10 @@ export const handler: Handlers<Page> = {
     }
 };
 
-export default function RenderBab(props: PageProps<string>) {
-    console.log("RenderBab: slug = " + props.slug);
+export default function RenderBab(props: PageProps<Page>) {
+    //console.log(`Render: ${JSON.stringify(props.data.attrs)}`);
     return (
-        <div class="w3-container" dangerouslySetInnerHTML={{__html: props.data}}/>
+        <div class="w3-container" dangerouslySetInnerHTML={{__html: props.data.markdown}}/>
     );
 }
 
