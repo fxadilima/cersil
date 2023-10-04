@@ -20,7 +20,7 @@ export default function PostPage(props: PageProps<Post>) {
         highlight: function (str, lang) {
             if (lang && hljs.getLanguage(lang)) {
                 try {
-                    return `<div class="w3-panel w3-padding-16 w3-border w3-round">${hljs.highlight(str, { language: lang }).value}</div>`;
+                    return `<div class="w3-panel w3-padding-16 w3-border w3-round" style="overflow-x:auto;">${hljs.highlight(str, { language: lang }).value}</div>`;
                 } catch (__) {}
             }
             return ''; // use external default escaping

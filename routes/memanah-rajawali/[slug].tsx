@@ -36,7 +36,7 @@ export const handler: Handlers<Page> = {
 };
 
 export default function RenderBab(props: PageProps<string>) {
-    //console.log("RenderBab\n" + props);
+    console.log("RenderBab: slug = " + props.slug);
     return (
         <div class="w3-container" dangerouslySetInnerHTML={{__html: props.data}}/>
     );

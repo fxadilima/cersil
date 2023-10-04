@@ -14,6 +14,8 @@ nextPage: bab3
 prevPage: bab1
 ---
 
+[◀ Prev](bab1.md "Bab 1") [Next ▶](bab3.md "Bab 3")
+
 Pada saat Yan Lie berjalan keluar, ia berpapasan dengan seorang pelajar setengah
 baya yang sedang berjalan masuk, menyeret kakinya sambil terus menguap. Ia seperti
 sedang tersenyum tapi ternyata tidak dan terus menatapnya penuh rasa ingin tahu,
@@ -1965,4 +1967,3 @@ makin lama makin jauh, sampai akhirnya tak terdengar lagi.
 
 [yuan bao]: #yuanbao "Yuan Bao (元宝), lantakan emas atau perak yang berbentuk perahu, berfungsi sebagai alat tukar."
 
-[◀ Prev](bab1.md) [Next ▶](bab3.md)

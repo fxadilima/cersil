@@ -18,9 +18,14 @@ export default function Layout({ Component, state }: LayoutProps) {
             </div>
             <div class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-collapse" style="width:300px;right:0" id="rightMenu">
                 <button class="w3-bar-item w3-button w3-large w3-hide-large" id="btnRightClose">Close &times;</button>
-                <a href="/api/buku" class="w3-bar-item w3-btn w3-hover-black"><i class="fa fa-book"></i> Daftar Buku</a>
-                <a href="/posts" class="w3-bar-item w3-btn w3-hover-black"><i class="fa fa-book"></i> Blogs</a>
-                <a href="/about" class="w3-bar-item w3-btn w3-hover-black"><i class="fa fa-exclamation-circle"></i> About</a>
+                <ul class="w3-ul">
+                    <li>
+                        <h5>🦅 Memanah Rajawali</h5>
+                        <a href="bab1.md" class="w3-bar-item"><i class="fa fa-book"></i> Insiden Di Tengah Badai Salju</a>
+                        <a href="bab2.md" class="w3-bar-item"><i class="fa fa-book"></i> Tujuh Orang Aneh Dari Jiangnan</a>
+                        <a href="bab3.md" class="w3-bar-item"><i class="fa fa-book"></i> Kehidupan Di Padang Rumput</a>
+                    </li>
+                </ul>
             </div>
             <main class="w3-main" style="margin-left:300px;margin-right:300px;margin-top:0px;margin-bottom:10px;">
                 <div class="w3-hide-large">

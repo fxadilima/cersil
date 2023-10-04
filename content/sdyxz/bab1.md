@@ -12,6 +12,8 @@ nextPage: bab2
 prevPage: intro
 ---
 
+[Next ▶](bab2.md).
+
 Di masa itu, di dekat kota Lin'an, sebelah Timur wilayah Jin, dua orang pemuda
 yang bersahabat karib sedang minum arak sambil menikmati cerita rakyat di sebuah
 kedai, di pinggiran kota.
@@ -260,7 +262,8 @@ akan seperti apa, sulit diperkirakan, sulit...!"
 
 Sambil bicara ia terus menggelengkan kepalanya.[^cuplikan-1]
 
-[^cuplikan-1]: [Cuplikan adegan ini dari Youtube](https://youtube.com/clip/UgkxVA6xG-NgdbtBejjl2PM8vtE5jMRvAeqc).
+[^cuplikan-1]: [Cuplikan adegan ini didapat dari Youtube](https://youtube.com/clip/UgkxVA6xG-NgdbtBejjl2PM8vtE5jMRvAeqc).
+    Berisi hasil adaptasi tahun 2003, produksi _mainland_.
 
 "Apanya yang sulit?" kata Guo Xiaotian, agak emosi. "Ini daerah pinggiran, bukan
 Lin'an. Tidak ada yang akan memenggal kepalamu. Tidak ada orang di dunia yang tidak
@@ -1931,5 +1934,3 @@ aku ingin buang lebih banyak uang juga tidak bisa." kata Yan Lie.
 
 [^daozhang]: Dào Zhang (道长, bisa juga ditulis Dào cháng) adalah panggilan umum untuk seorang pendeta Tao, terlepas dari jabatan yang 
     dipegangnya dalam sebuah perguruan, organisasi, ataupun hirarki kepemimpinan Tao lainnya.
-
-[Next ▶](bab2.md).
