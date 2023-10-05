@@ -1,6 +1,6 @@
 ---
 layout: default
-chapter: "Appendex A"
+chapter: "Appendix A"
 title: 🦅 Prolog
 author: FX. Adi Lima
 description: >

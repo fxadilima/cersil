@@ -10,13 +10,13 @@ export default function Layout({ Component, data }: LayoutProps) {
     // console.log(`Layout SDYXZ: attrs = ${JSON.stringify(data.attrs)}`);
     return (
         <>
-            <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-collapse" style="width:300px;" id="leftMenu">
+            <div class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-collapse" style="width:300px;" id="leftMenu">
                 <button class="w3-bar-item w3-button w3-large w3-hover-none w3-hide-large" id="btnLeftClose">Close &times;</button>
                 <a href="/api/buku" class="w3-bar-item w3-btn w3-hover-black"><i class="fa fa-book"></i> Daftar Buku</a>
                 <a href="/posts" class="w3-bar-item w3-btn w3-hover-black"><i class="fa fa-book"></i> Blogs</a>
                 <a href="/about" class="w3-bar-item w3-btn w3-hover-black"><i class="fa fa-exclamation-circle"></i> About</a>
             </div>
-            <div class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-collapse" style="width:300px;right:0;" id="rightMenu">
+            <div class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-collapse" style="width:300px;right:0;" id="rightMenu">
                 <button class="w3-bar-item w3-button w3-large w3-hide-large" id="btnRightClose">Close &times;</button>
                 <ul class="w3-ul">
                     <li>
@@ -51,13 +51,21 @@ export default function Layout({ Component, data }: LayoutProps) {
                         <a href="bab28.md" class="w3-bar-item w3-button">Puncak Gunung Telapak Besi</a>
                         <a href="bab29.md" class="w3-bar-item w3-button">Seorang Wanita Di Tengah Rawa</a>
                         <a href="bab30.md" class="w3-bar-item w3-button">Biksu Yideng</a>
+                        <a href="bab31.md" class="w3-bar-item w3-button">Saputangan Kekasih</a>
+                        <a href="bab32.md" class="w3-bar-item w3-button">Di Tepi Sungai Deras</a>
+                        <a href="bab33.md" class="w3-bar-item w3-button">Malapetaka Yang Akan Datang</a>
+                        <a href="bab34.md" class="w3-bar-item w3-button">Perubahan Radikal Di Pulau Persik</a>
+                        <a href="bab35.md" class="w3-bar-item w3-button">Di Sebuah Kuil</a>
+                        <a href="bab36.md" class="w3-bar-item w3-button">Perjalanan Ke Barat</a>
+                        <a href="bab37.md" class="w3-bar-item w3-button">Turun Dari Langit</a>
+                        <a href="bab38.md" class="w3-bar-item w3-button">Perintah Rahasia</a>
                     </li>
                 </ul>
             </div>
             <main class="w3-main" style="margin-left:300px;margin-right:300px;margin-top:0px;margin-bottom:10px;">
                 <div class="w3-hide-large">
                     <button class="w3-button w3-xlarge w3-left w3-hover-none" id="btnLeftOpen"><i class="fa fa-bars"></i></button>
-                    <button class="w3-button w3-xlarge w3-right w3-hover-none" id="btnRightOpen"><i class="fa fa-caret-square-o-down"></i></button>
+                    <button class="w3-button w3-xlarge w3-right w3-hover-none" id="btnRightOpen"><i class="fa fa-cog"></i></button>
                 </div>
                 <div class="w3-row-padding">
                     <div class="w3-padding-16 w3-col m3 l2">
@@ -66,6 +74,10 @@ export default function Layout({ Component, data }: LayoutProps) {
                     <div class="w3-col m9 l10">
                         <h1>Chapter: {data.attrs.chapter}</h1>
                         <h3>{data.attrs.title}</h3>
+                        <div class="w3-bar">
+                            <a href={data.attrs.prevPage + ".md"} class="w3-bar-item w3-btn w3-hover-black w3-round"><i class="fa fa-arrow-circle-left"></i> Prev</a>
+                            <a href={data.attrs.nextPage + ".md"} class="w3-bar-item w3-btn w3-hover-black w3-round">Next <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <Component/>

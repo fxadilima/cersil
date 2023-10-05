@@ -278,7 +278,7 @@ Qiu Chuji mengacungkan jempolnya. "Han Xiong tepat sekali! Kalau kalian Tujuh Pe
 merawat anak keluarga Guo sampai dewasa, maka atas nama almarhum Guo Xiong, aku sangat 
 berterima kasih." Ia membungkuk kepada mereka semua.
 
-"Gagasanmu ini agak licik," kata Zhu Cong. "Dengan beberapa kalimatm itu, kami tujuh 
+"Gagasanmu ini agak licik," kata Zhu Cong. "Dengan beberapa kalimatmu itu, kami tujuh 
 bersaudara harus menyerahkan delapan belas tahun hidup kami?" Wajah Qiu Chuji agak 
 berubah warna, ia tiba-tiba tertawa terbahak-bahak.
 

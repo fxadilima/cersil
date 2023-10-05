@@ -35,28 +35,26 @@ export default function PostPage(props: PageProps<Post>) {
                 <meta name="description" content="{post.snippet}"/>
                 <meta name="author" content="FX. Adi Lima"/>
             </Head>
-            <main class="w3-main w3-padding-32">
-                <div class="w3-content">
-                    <header class="w3-container">
-                        <h1>{post.title}</h1>
-                        <time>
-                        {new Date(post.publishedAt).toLocaleString("id-ID", {
-                            weekday: "long",
-                            year: "numeric",
-                            month: "long",
-                            day: "numeric",
-                            timeZone: "Asia/Jakarta",
-                            timeZoneName: "short",
-                            hour12: false,
-                            hour: 'numeric',
-                            minute: 'numeric',
-                            second: 'numeric'
-                        })}
-                        </time>
-                    </header> 
-                    <div class="w3-container" dangerouslySetInnerHTML={{__html: md.render(post.content)}}/>
-                </div>
-            </main>
+            <div class="w3-content">
+                <header class="w3-container">
+                    <h1>{post.title}</h1>
+                    <time>
+                    {new Date(post.publishedAt).toLocaleString("id-ID", {
+                        weekday: "long",
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                        timeZone: "Asia/Jakarta",
+                        timeZoneName: "short",
+                        hour12: false,
+                        hour: 'numeric',
+                        minute: 'numeric',
+                        second: 'numeric'
+                    })}
+                    </time>
+                </header> 
+                <div class="w3-container" dangerouslySetInnerHTML={{__html: md.render(post.content)}}/>
+            </div>
         </>
     )
 }

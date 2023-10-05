@@ -14,8 +14,6 @@ nextPage: bab3
 prevPage: bab1
 ---
 
-[◀ Prev](bab1.md "Bab 1") [Next ▶](bab3.md "Bab 3")
-
 Pada saat Yan Lie berjalan keluar, ia berpapasan dengan seorang pelajar setengah
 baya yang sedang berjalan masuk, menyeret kakinya sambil terus menguap. Ia seperti
 sedang tersenyum tapi ternyata tidak dan terus menatapnya penuh rasa ingin tahu,

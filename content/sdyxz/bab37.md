@@ -346,9 +346,9 @@ mencoba untuk naik," katanya. Ia memerintahkan puluhan orang prajurit untuk mena
 tanah di bagian itu.
 
 Berat dari puluhan prajurit berikut kuda mereka cukup untuk menekan kembali tanah yang terangkat. Meskipun tenaga
-Ouyang Feng menakjubkan ia tidak bisa menembus tanak, maka tanah itu perlahan-lahan kembali seperti semula.
+Ouyang Feng menakjubkan ia tidak bisa menembus tanah, maka tanah itu perlahan-lahan kembali seperti semula.
 Yang mengejutkan semua orang adalah, di lokasi lain tanah kembali terangkat. Para prajurit mengendarai kuda 
-mereka ke arah mana pun tanah terangkat dan m,enginjak-injaknya sampai rata.
+mereka ke arah mana pun tanah terangkat dan menginjak-injaknya sampai rata.
 
 Tak terlalu lama kemudian tidak lagi tanah di bagian mana pun yang terangkat. Mereka mengasumsikan bahwa 
 Ouyang Feng telah kehabisan tenaga atau bahkan tewas akibat sesak nafas. Guo Jing memerintahkan para prajurit  
@@ -356,14 +356,14 @@ untuk turun dari kuda dan menggali lubang. Saat itu sudah jam pertama, yaitu ant
 jam satu dini hari. Para prajurit mengangkat obor mereka tinggi-tinggi, mereka berdiri dalam lingkaran mengelilingi
 penggalian lubang itu.
 
-Sekita selisin prajurit menggunakan sekop dan pacul agak lebih jauh dari satu 
+Sekitar selusin prajurit menggunakan sekop dan pacul agak lebih jauh dari satu 
 [zhang](referensi-unit.md#satuan-zhang "1 zhang adalah sekitar 3 meter") dari situ sebelum akhirnya melihat 
 Ouyang Feng sedang berdiri di dalam pasir. Lokasi ini adalah beberapa _zhang_ dari tenda. Meskipun pasir itu 
 halus, tetapi Ouyang Feng berhasil menggali di bawah tanah menggunakan tangan kosong seperti tikus. Ini adalah
 demonstrasi tenaga dalam yang sangat kuat, sungguh luar biasa. Para prajurit itu terperangah penuh kekaguman,
 mereka mengangkatnya naik dan meletakkannya di atas tanah.
 
-Lu Youjiao memeriksa pernafasannya, tetapi merasa dadanya asih hangat, ia memerintahkan para prajurit untuk 
+Lu Youjiao memeriksa pernafasannya, tetapi merasa dadanya masih hangat, ia memerintahkan para prajurit untuk 
 mengikatnya dengan rantai besi karena takut Ouyang Feng akan membuat masalah begitu ia sadar. Tak seorang pun
 mengira bahwa sebenarnya ketika sedang merangkak naik di dalam pasir Ouyang Feng tidak mampu menggali jalan ke
 atas karena beban dari pasukan berkuda itu, ia pura-pura mati, berpikir untuk melarikan diri nanti. Ia menahan nafasnya,
@@ -381,7 +381,7 @@ Ia sadar bahwa Guo Jing tidak menggunakan sepenuh tenaganya, kalau tidak maka or
 Lebih jauh lagi, kedua tangan dan kakinya lemah, sekalipun Guo Jing tidak menotoknya ia tetap bukan tandingan Guo Jing.
 Ia terpaksa melepaskan Lu Youjiao dan berdiri diam.
 
-"ouyang Xiansheng," kata Guo Jing. "Boleh kutanya apakah kau melihat Nona Huang tadi?"
+"Ouyang Xiansheng," kata Guo Jing. "Boleh kutanya apakah kau melihat Nona Huang tadi?"
 
 "Aku melihat bayangannya, itu sebabnya aku datang untuk mencarinya," jawab Ouyang Feng.
 
@@ -1440,11 +1440,11 @@ gerbang istana ia ternyata suara Khan Agung tertawa gembira terdengar dari dalam
 terkejut. Ia mempercepat langkahnya memasuki gedung utama.
 
 Ia melihat di sebelah Khan Agung duduk seorang laki-laki, dan di dekat kakinya duduk seorang gadis muda sedang
-bersandar di lututnya. Laki-laki itu berwajah kaemerahan dengan rambut putih, ia tak lain dan tak bukan adalah
+bersandar di lututnya. Laki-laki itu berwajah kemerahan dengan rambut putih, ia tak lain dan tak bukan adalah
 Changchun Zi, Qiu Chuji. Dan siapa lagi nona muda itu kalau bukan Putri Huazheng.
 
 Guo Jing sangat senang, ia bergegas menemui mereka. Tiba-tiba Genghis Khan merebut sebuah tombak panjang dari tangan
-pengawalnya, bepaling dan menyerang kepala Guo Jing dengan ganas dengan tombak itu.
+pengawalnya, berpaling dan menyerang kepala Guo Jing dengan ganas menggunakan tombak itu.
 
 Guo Jing terkejut, ia memiringkan tubuhnya ke samping untuk mengelak. 'Krekk!' gagang tombak menghantam bahu kirinya
 dan patah menjadi dua. Genghis Khan meledak dalam tawa. "Nak, yang sudah berlalu biarkan berlalu. Kalau bukan 
@@ -1457,7 +1457,7 @@ Genghis Khan membuang tombak yang patah itu ke lantai. Ia tertawa. "Siapa bilang
 "Aku melihatnya dengan mataku sendiri, kenapa kau menyangkalnya?" kata Huazheng. "Itu sebabnya hatiku gelisah,
 aku datang kemari bersama dengan Qiu Daozhang untuk melihat."
 
-Genghis Khan tertawa, ia menarik tangan pputrinya dengan satu tangan, dan Guo Jing dengan tangan yang lain,
+Genghis Khan tertawa, ia menarik tangan putrinya dengan satu tangan, dan Guo Jing dengan tangan yang lain,
 ia berkata, "Jangan cekcok, duduk manis, kita dengarkan Qiu Daozhang membaca puisi."
 
 [^yanyulou]: Yan Yu Lou (烟雨), dalam episode sebelumnya diterjemahkan menjadi 'Kedai Hujan Berkabut'. Pertarungan sengit antara Enam Pendekar Quanzhen melawan Huang Yaoshi trejadi di lokasi ini.
@@ -1466,7 +1466,7 @@ Dalam pertarungan di Yan Yu Lou[^yanyulou], Qiu Chuji melihat dengan matanya sen
 keadaan sehat walafiat, Ia sadar bahwa Tan Chuduan dibunuh oleh Ouyang Feng, dan bukan Huang Yaoshi. Bersama-sama
 dengan Ma Yu dan yang lain mereka minta maaf kepada Huang Yaoshi. Setelak itu Keenam Pendekar Quanzhen berpapasan
 dengan Ke Zhen'E yang menceritakan semua yang trejadi, mereka semua menghela nafas dalam-dalam. Penyesalan Qiu Chuji 
-sangat mendalam, ia merasa kurang berhati-hati dengan miridnya, ia mengajarkan ilmu silat kepada Yang Kang, tetapi
+sangat mendalam, ia merasa kurang berhati-hati dengan muridnya, ia mengajarkan ilmu silat kepada Yang Kang, tetapi
 tidak membawanya keluar dari istana. Anak muda itu telah dimanjakan dalam kekayaan dan kehormatan, dan sekarang 
 hidupnya berakhir dengan tragis.
 
@@ -1490,7 +1490,7 @@ Seorang pejabat yang memahami literatur bangsa Han memanggil Yelu Chucai untuk m
 dalam bahasa Mongolia. Genghis Khan mendengarkan. Ia menganggukkan kepalanya tetapi tidak mengatakan apa-apa.
 
 Kepada Guo Jing Qiu Chuji berkata, "Tahun itu ketika aku dan ketujuh orang gurumu mengadu ilmu silat di Kedai 
-Dewa Mabuk, gurumu yang kedua mmengambil puisi yang baru setengah jadi dari sakuku. Kali ini aku berjalan ke Barat
+Dewa Mabuk, gurumu yang kedua mengambil puisi yang baru setengah jadi dari sakuku. Kali ini aku berjalan ke Barat
 tanpa bisa melihat ketujuh orang gurumu lagi, tapi akhirnya aku berhasil menyelesaikan puisi itu." Ia mulai 
 membacanya. "Sejak jaman dahulu kala, bulan Zhongqiu adalah yang paling terang. Hembusan angin sejuk di malam hari
 begitu jelas. Hari ketika meteor jatuh lebih terang daripada jagat raya, Sang Naga dari Empat Samudera melompat
@@ -1500,7 +1500,7 @@ bacaannya, "Nyanyian dari menara Kerajaan Wu dan Yue terdengar luas, barak milit
 makan dan minuman. Aku tiba di hadapan Kaisar dari sebelah Utara Sungai, berhasrat menghentikan tikaman tombak,
 berharap menikmati kedamaian dan rasa aman."
 
-Terinat akan Tujuh Orang Aneh dari Jiangnan, Gou Jing berlinang air mata.
+Teringat akan Tujuh Orang Aneh dari Jiangnan, Gou Jing berlinang air mata.
 
 Genghis Khan berkata, "Dalam perjalanan ke Barat, Daozhang pasti sudah melihat kekuatan militerku. Apakah puisimu
 itu bercerita tentang hal ini?" 
@@ -1513,7 +1513,7 @@ menelan ratapan mereka tanpa bersuara. Mereka memandang langit dan menjerit ke S
 Ini hanya masalah sepele yang tak layak diperhatikan Surga. Kedamaian di antara ribuan kekacauan, tanpa agama 
 membangun jiwa-jiwa yang berbudi.'"
 
-Yelu Chucai berpikir bahwa Genghis Kha tidak akan senang mendengar kalimat puisi itu, maka ia ragu-ragu dan 
+Yelu Chucai berpikir bahwa Genghis Khan tidak akan senang mendengar kalimat puisi itu, maka ia ragu-ragu dan 
 tidak menerjemahkan dengan segera. Qiu Chuji mengabaikan dia, ia melanjutkan, "Puisiku yang kedua adalah ini:
 'Wahai, dunia terbuka luas, di atasnya hidup jutaan makhluk. Kekejaman dan keganasan saling berperang tanpa henti,
 membawa kesengsaraan manusia sebagai persembahan ke tahtanya. Kaisara dari Surga, Ratu dari bumi, bersama dengan
@@ -1522,7 +1522,7 @@ malam dipenuhi sakit hati yang sia-sia'."[^catatan-penulis]
 
 [^catatan-penulis]: **Catatan Penulis**: Semua puisi ini berisi bait dengan tujuh karakter dalam bahasa aslinya.
 
-Kedua puisi itu meskipun tak terlalu dalam, tetapi esensi ratapan nasib manusia yang kerkandung di dalamnya
+Kedua puisi itu meskipun tak terlalu dalam, tetapi esensi ratapan nasib manusia yang terkandung di dalamnya
 sangat jelas. Sebelumnya pada hari itu Guo Jing telah melihat sendiri pembantaian rakyat di kota, ia jadi 
 makin muram.
 

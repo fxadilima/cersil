@@ -12,8 +12,6 @@ nextPage: bab2
 prevPage: intro
 ---
 
-[Next ▶](bab2.md).
-
 Di masa itu, di dekat kota Lin'an, sebelah Timur wilayah Jin, dua orang pemuda
 yang bersahabat karib sedang minum arak sambil menikmati cerita rakyat di sebuah
 kedai, di pinggiran kota.
