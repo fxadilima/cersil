@@ -17,7 +17,7 @@ JavaScript adalah semacam ini:
 ```js
 for await (const item of Deno.readDir("./public")) { 
     // lakukan sesuatu dengan item itu 
-    console.log(d.name);
+    console.log(item.name);
 } 
 ```
 

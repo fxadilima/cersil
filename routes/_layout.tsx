@@ -1,9 +1,8 @@
 import { LayoutProps } from "$fresh/server.ts";
 import {LeftPanel, MenuButton} from '../islands/LeftPanel.tsx';
 
-export default function Layout({ Component, data: object }: LayoutProps) {
+export default function Layout({ Component, data }: LayoutProps) {
     // do something with state here
-    console.log(`Layout: data = ${typeof data}`);
     return (
         <>
             <LeftPanel>

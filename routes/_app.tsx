@@ -5,7 +5,7 @@ export default function App({ Component, data }: AppProps) {
     return (
         <html lang="en">
             <head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>{data?.state?.title === undefined ? "Cerita Silat" : data.state.title}</title>
                 <link rel="icon" type="image/svg+xml" href="/logo.svg"/>

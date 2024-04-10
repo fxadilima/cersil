@@ -1,7 +1,7 @@
 ---
 title: Cerita Silat
 author: FX. Adi Lima
-description: > 
+snippet: > 
     Memuat terjemahan dan buku-buku cerita silat berdasarkan karakter
     karangan Jin Yong.
 image: /images/Screenshot-2023-10-05-11-19-24.png

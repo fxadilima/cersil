@@ -1,5 +1,5 @@
 import {HandlerContext, PageProps} from '$fresh/server.ts';
-import hljs from "https://esm.sh/highlight.js@11.8.0";
+import hljs from 'highlightjs';
 import MarkdownIt from 'markdown-it';
 import MarkdownItFootnote from 'markdown-it-footnote';
 import {h, Component, createElement} from 'preact';
