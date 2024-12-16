@@ -8,8 +8,8 @@ export default function App({ Component }: AppProps) {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Pedang Langit dan Golok Pembunuh Naga</title>
-                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-                <link rel="stylesheet" href="/styles.css"/>
+                <link rel="icon" href="/favicon.png" />
+                <link rel="stylesheet" href="/styles.css" />
             </head>
             <body>
                 <Component />

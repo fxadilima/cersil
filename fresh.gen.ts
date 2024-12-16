@@ -5,6 +5,7 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $dgsd_index from "./routes/dgsd/index.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $preludes_slug_ from "./routes/preludes/[slug].tsx";
@@ -29,6 +30,7 @@ import * as $yttlj_1354_index from "./routes/yttlj/1354/index.tsx";
 import * as $yttlj_1358_slug_ from "./routes/yttlj/1358/[slug].tsx";
 import * as $yttlj_1358_index from "./routes/yttlj/1358/index.tsx";
 import * as $yttlj_en_index from "./routes/yttlj/en/index.tsx";
+import * as $yttlj_index from "./routes/yttlj/index.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -37,6 +39,7 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/dgsd/index.tsx": $dgsd_index,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/preludes/[slug].tsx": $preludes_slug_,
@@ -61,6 +64,7 @@ const manifest = {
     "./routes/yttlj/1358/[slug].tsx": $yttlj_1358_slug_,
     "./routes/yttlj/1358/index.tsx": $yttlj_1358_index,
     "./routes/yttlj/en/index.tsx": $yttlj_en_index,
+    "./routes/yttlj/index.tsx": $yttlj_index,
   },
   islands: {
     "./islands/Counter.tsx": $Counter,

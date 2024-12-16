@@ -17,8 +17,8 @@ export const handler: Handlers<Page> = {
         const realPath = Deno.cwd() + "/content/preludes/" + ctx.params.slug;
         try {
             const txt = await Deno.readTextFile(realPath);
-            const { attrs, body } = extract(txt);
-            const html = await getHTMLString(body, "Preludes - " + ctx.params.slug);
+            //const { attrs, body } = extract(txt);
+            const html = await getHTMLString(txt, "Preludes - " + ctx.params.slug);
             return new Response(html, {
                 status: 200,
                 headers: {
