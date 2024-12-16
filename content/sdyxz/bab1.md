@@ -1,16 +1,17 @@
 ---
-layout: default
-chapter: 1
-title: 🦅 Insiden Di Tengah Badai Salju
+title: Insiden Di Tengah Badai Salju
 author: FX. Adi Lima
+description: Novel Memanah Rajawali, Bab 1.
 image: https://res.cloudinary.com/drzjshskk/image/upload/e_contrast:85,q_auto:best/v1676662508/sdyxz/originals/ch01_qqa6or.jpg
-description: >
+ilustrasi: |
   Akhirnya si pendeta tertawa, mendadak telapak kanannya menghantam pegangan tombak dengan kecepatan seperti angin. 
   Yang Tiexin merasa pangkal jempol dan telunjuknya mati rasa, dan dengan segera ia melepaskan tombak ke tanah 
   yang diselimuti salju.
 nextPage: bab2
 prevPage: intro
 ---
+
+# Bab 1
 
 Di masa itu, di dekat kota Lin'an, sebelah Timur wilayah Jin, dua orang pemuda
 yang bersahabat karib sedang minum arak sambil menikmati cerita rakyat di sebuah
@@ -260,8 +261,7 @@ akan seperti apa, sulit diperkirakan, sulit...!"
 
 Sambil bicara ia terus menggelengkan kepalanya.[^cuplikan-1]
 
-[^cuplikan-1]: [Cuplikan adegan ini didapat dari Youtube](https://youtube.com/clip/UgkxVA6xG-NgdbtBejjl2PM8vtE5jMRvAeqc).
-    Berisi hasil adaptasi tahun 2003, produksi _mainland_.
+[^cuplikan-1]: [Cuplikan adegan ini dari Youtube](https://youtube.com/clip/UgkxVA6xG-NgdbtBejjl2PM8vtE5jMRvAeqc).
 
 "Apanya yang sulit?" kata Guo Xiaotian, agak emosi. "Ini daerah pinggiran, bukan
 Lin'an. Tidak ada yang akan memenggal kepalamu. Tidak ada orang di dunia yang tidak
