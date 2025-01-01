@@ -1,4 +1,4 @@
 import { defineConfig } from "$fresh/server.ts";
 
-export default defineConfig({port: 3000});
+export default defineConfig({port: 4000});
 
