@@ -7,6 +7,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $dgsd_index from "./routes/dgsd/index.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
+import * as $index_1 from "./routes/index-1.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $preludes_slug_ from "./routes/preludes/[slug].tsx";
 import * as $preludes_layout from "./routes/preludes/_layout.tsx";
@@ -41,6 +42,7 @@ const manifest = {
     "./routes/api/joke.ts": $api_joke,
     "./routes/dgsd/index.tsx": $dgsd_index,
     "./routes/greet/[name].tsx": $greet_name_,
+    "./routes/index-1.tsx": $index_1,
     "./routes/index.tsx": $index,
     "./routes/preludes/[slug].tsx": $preludes_slug_,
     "./routes/preludes/_layout.tsx": $preludes_layout,

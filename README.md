@@ -14,6 +14,3 @@ deno task start
 ```
 
 This will watch the project directory and restart as necessary.
-
-This project is online at [my Martial Art novel site](https://cersil.deno.dev).
-
