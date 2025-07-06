@@ -1,0 +1,106 @@
+---
+title: Cersil
+author: Adi Lima
+---
+
+# README
+
+## &#8505;&#65039; Informasi
+
+Halaman ini akan digunakan sebagai halaman depan.
+
+Sebisa mungkin gunakan karakter unicode sebagai simbol, misalnya, gunakan &#8505;&#65039; untuk mewakili 
+**Informasi**. 
+
+Gunakan 🏠 (\&#127968;) untuk HOME.
+
+**Test links:**
+
+- [Yitian Tulong Ji: Bab 1](/content/yttlj/1351/titisan-buddha-kaisar-baru)
+- [Yitian Tulong Ji: Bab 9](/content/yttlj/1341/bab9)
+
+
+## 🔖 Home Page Menggunakan Typescript
+
+Halaman ini sendiri dirender dari file index.mdx dari dalam module index.tsx.
+Kode yang dipakai adalah sbb:
+
+```tsx
+import { compileSync, runSync } from 'mdx-js/mdx';
+import * as runtime from 'https://esm.sh/preact@10.15.1/jsx-runtime';
+import rehypeHighlight from 'rehype-highlight';
+import remarkGfm from 'remark-gfm';
+
+export default function HomePage() {
+    console.log("🔖 HomePage: Rendering /content/index.mdx");
+    const txt = Deno.readTextFileSync("./content/index.mdx");
+    const code = compileSync(txt, {
+        outputFormat: "function-body",
+        jsxImportSource: 'preact',
+        rehypePlugins: [rehypeHighlight],
+        remarkPlugins: [remarkGfm]
+    });
+    const {default: MDXContent} = runSync(String(code), runtime);
+
+    return (
+        <main class="w3-main w3-container">
+            <div class="w3-container">
+                <MDXContent/>
+            </div>
+        </main>
+    );
+}
+```
+
+***
+
+<details>
+<summary><strong>&#10024; Technical Notes</strong></summary>
+
+Simbol 🔖 sebaiknya kita gunakan untuk mewakili <mark>bookmark</mark>.
+Di permulaan judul bab sebaiknya kita gunakan simbol 📖, yaitu karakter UTF-8
+dengan nomor 128214.
+
+Sisipan bisa kita kemas menjadi teks yang jauh lebih praktis dan rapi:
+
+```markdown
+
+<details>
+<summary><strong>&#127916; Cuplikan YouTube</strong></summary>
+
+[Ilustrasi drama](https://youtube.com/clip/UgkxlO6SQZVF62GUsdm0BB3oM1dWl6dqEjqz) ketika Yan Lie
+kehilangan uangnya, tidak betul-betul tepat sama seperti urutan peristiwa dalam
+novel Jin Yong ini. Tetapi dialog dan peristiwa yang terjadi masih cukup _representatif_.
+
+</details>
+
+```
+
+</details>
+
+
+## Autolink literals
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.
+
+## Strikethrough
+
+~one~ or ~~two~~ tildes.
+
+
+## Tasklist
+
+* [ ] to do
+* [x] done
+
+### Contact
+
+This is just an example of a link, triggered by sidebar.
+
+

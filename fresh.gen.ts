@@ -6,35 +6,10 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $content_path_ from "./routes/content/[...path].tsx";
-import * as $dgsd_index from "./routes/dgsd/index.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
-import * as $index_1 from "./routes/index-1.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $preludes_slug_ from "./routes/preludes/[slug].tsx";
-import * as $preludes_layout from "./routes/preludes/_layout.tsx";
-import * as $sdxl_1232_slug_ from "./routes/sdxl/1232/[slug].tsx";
-import * as $sdxl_1251_slug_ from "./routes/sdxl/1251/[slug].tsx";
-import * as $sdxl_1257_slug_ from "./routes/sdxl/1257/[slug].tsx";
-import * as $sdxl_1259_slug_ from "./routes/sdxl/1259/[slug].tsx";
-import * as $sdxl_layout from "./routes/sdxl/_layout.tsx";
-import * as $sdxl_index from "./routes/sdxl/index.tsx";
-import * as $sdxl_misc_slug_ from "./routes/sdxl/misc/[slug].tsx";
-import * as $sdyxz_slug_ from "./routes/sdyxz/[slug].tsx";
-import * as $sdyxz_layout from "./routes/sdyxz/_layout.tsx";
-import * as $testing from "./routes/testing.tsx";
-import * as $yttlj_1341_slug_ from "./routes/yttlj/1341/[slug].tsx";
-import * as $yttlj_1341_layout from "./routes/yttlj/1341/_layout.tsx";
-import * as $yttlj_1351_slug_ from "./routes/yttlj/1351/[slug].tsx";
-import * as $yttlj_1351_layout from "./routes/yttlj/1351/_layout.tsx";
-import * as $yttlj_1353_slug_ from "./routes/yttlj/1353/[slug].tsx";
-import * as $yttlj_1353_index from "./routes/yttlj/1353/index.tsx";
-import * as $yttlj_1354_slug_ from "./routes/yttlj/1354/[slug].tsx";
-import * as $yttlj_1354_index from "./routes/yttlj/1354/index.tsx";
-import * as $yttlj_1358_slug_ from "./routes/yttlj/1358/[slug].tsx";
-import * as $yttlj_1358_index from "./routes/yttlj/1358/index.tsx";
-import * as $yttlj_en_index from "./routes/yttlj/en/index.tsx";
-import * as $yttlj_index from "./routes/yttlj/index.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $Sidebar from "./islands/Sidebar.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -43,37 +18,12 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
     "./routes/content/[...path].tsx": $content_path_,
-    "./routes/dgsd/index.tsx": $dgsd_index,
     "./routes/greet/[name].tsx": $greet_name_,
-    "./routes/index-1.tsx": $index_1,
     "./routes/index.tsx": $index,
-    "./routes/preludes/[slug].tsx": $preludes_slug_,
-    "./routes/preludes/_layout.tsx": $preludes_layout,
-    "./routes/sdxl/1232/[slug].tsx": $sdxl_1232_slug_,
-    "./routes/sdxl/1251/[slug].tsx": $sdxl_1251_slug_,
-    "./routes/sdxl/1257/[slug].tsx": $sdxl_1257_slug_,
-    "./routes/sdxl/1259/[slug].tsx": $sdxl_1259_slug_,
-    "./routes/sdxl/_layout.tsx": $sdxl_layout,
-    "./routes/sdxl/index.tsx": $sdxl_index,
-    "./routes/sdxl/misc/[slug].tsx": $sdxl_misc_slug_,
-    "./routes/sdyxz/[slug].tsx": $sdyxz_slug_,
-    "./routes/sdyxz/_layout.tsx": $sdyxz_layout,
-    "./routes/testing.tsx": $testing,
-    "./routes/yttlj/1341/[slug].tsx": $yttlj_1341_slug_,
-    "./routes/yttlj/1341/_layout.tsx": $yttlj_1341_layout,
-    "./routes/yttlj/1351/[slug].tsx": $yttlj_1351_slug_,
-    "./routes/yttlj/1351/_layout.tsx": $yttlj_1351_layout,
-    "./routes/yttlj/1353/[slug].tsx": $yttlj_1353_slug_,
-    "./routes/yttlj/1353/index.tsx": $yttlj_1353_index,
-    "./routes/yttlj/1354/[slug].tsx": $yttlj_1354_slug_,
-    "./routes/yttlj/1354/index.tsx": $yttlj_1354_index,
-    "./routes/yttlj/1358/[slug].tsx": $yttlj_1358_slug_,
-    "./routes/yttlj/1358/index.tsx": $yttlj_1358_index,
-    "./routes/yttlj/en/index.tsx": $yttlj_en_index,
-    "./routes/yttlj/index.tsx": $yttlj_index,
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
+    "./islands/Sidebar.tsx": $Sidebar,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

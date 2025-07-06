@@ -1,15 +1,16 @@
-import { getCompiledMdxComponent } from '../components/MDXRenderer.tsx'; // Adjust path
+// Okay, by reusing our ../utils/MDXRenderer.tsx and /routes/content/[...path].tsx
+// my /routes/index.tsx is now shorter
+import { MDData, getMarkdownComponent } from "../utils/MarkdownRenderer.tsx";
+import { Head } from "$fresh/runtime.ts";
 
-export default async function HomePage() {
-    // Await the function that gets the component
-    const MDXContent = await getCompiledMdxComponent("./content/index.mdx");
-
-    return (
-        <main class="w3-main w3-container">
-            <div class="w3-content">
-                {/* Now MDXContent is a valid Preact component */}
-                <MDXContent/>
-            </div>
-        </main>
-    );
+export default async function Home() {
+  const page: MDData = await getMarkdownComponent(`${Deno.cwd()}/content/`, '');
+  return (
+    <>
+      <Head>
+        <title>{page.frontmatter.title}</title>
+      </Head>
+      {page.content}
+    </>
+  );
 }
