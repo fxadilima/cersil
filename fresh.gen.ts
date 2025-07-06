@@ -5,6 +5,7 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $content_path_ from "./routes/content/[...path].tsx";
 import * as $dgsd_index from "./routes/dgsd/index.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index_1 from "./routes/index-1.tsx";
@@ -20,6 +21,7 @@ import * as $sdxl_index from "./routes/sdxl/index.tsx";
 import * as $sdxl_misc_slug_ from "./routes/sdxl/misc/[slug].tsx";
 import * as $sdyxz_slug_ from "./routes/sdyxz/[slug].tsx";
 import * as $sdyxz_layout from "./routes/sdyxz/_layout.tsx";
+import * as $testing from "./routes/testing.tsx";
 import * as $yttlj_1341_slug_ from "./routes/yttlj/1341/[slug].tsx";
 import * as $yttlj_1341_layout from "./routes/yttlj/1341/_layout.tsx";
 import * as $yttlj_1351_slug_ from "./routes/yttlj/1351/[slug].tsx";
@@ -40,6 +42,7 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/content/[...path].tsx": $content_path_,
     "./routes/dgsd/index.tsx": $dgsd_index,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index-1.tsx": $index_1,
@@ -55,6 +58,7 @@ const manifest = {
     "./routes/sdxl/misc/[slug].tsx": $sdxl_misc_slug_,
     "./routes/sdyxz/[slug].tsx": $sdyxz_slug_,
     "./routes/sdyxz/_layout.tsx": $sdyxz_layout,
+    "./routes/testing.tsx": $testing,
     "./routes/yttlj/1341/[slug].tsx": $yttlj_1341_slug_,
     "./routes/yttlj/1341/_layout.tsx": $yttlj_1341_layout,
     "./routes/yttlj/1351/[slug].tsx": $yttlj_1351_slug_,
