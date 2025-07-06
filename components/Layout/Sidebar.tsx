@@ -27,17 +27,17 @@ const Sidebar: FunctionComponent = () => {
           <i class="fa fa-home w3-xxlarge"></i>
           <p>HOME</p>
         </a>
-        <a href={`/about/`} class="w3-bar-item w3-button w3-padding-large w3-hover-black tablink">
+        <a href={`/content/preludes/`} class="w3-bar-item w3-button w3-padding-large w3-hover-black tablink">
           <i class="fa fa-user w3-xxlarge"></i>
-          <p>ABOUT</p>
+          <p>Preludes</p>
         </a>
-        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a href="/content/yttlj/" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
           <i class="fa fa-eye w3-xxlarge"></i>
-          <p>PHOTOS</p>
+          <p>Book 1</p>
         </a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a href="/content/plitwh/" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
           <i class="fa fa-envelope w3-xxlarge"></i>
-          <p>CONTACT</p>
+          <p>Book 2</p>
         </a>
       </nav>
 
