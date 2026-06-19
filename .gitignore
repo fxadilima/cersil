@@ -1,0 +1,24 @@
+# === Node / Vite / Front-end ===
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# === Deno ===
+# Mengabaikan folder cache Deno lokal jika kamu menggunakan vendor lokal
+.deno/
+vendor/
+
+# === Editor & Sistem Operasi ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# === Environment Variables (Kunci Rahasia) ===
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+

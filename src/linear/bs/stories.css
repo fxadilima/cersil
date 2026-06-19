@@ -1,0 +1,66 @@
+/* Kontainer Utama Card */
+.story-card {
+  display: flex;
+  flex-direction: column; /* 📱 Default di HP: Berbaris ke bawah (vertikal) */
+  background-color: #1e222b;
+  border: 1px solid #2d3341;
+  border-radius: 8px;
+  padding: 16px;
+  gap: 16px; /* Jarak otomatis antara gambar dan teks */
+  margin-bottom: 20px;
+}
+
+/* Ukuran Bungkus Gambar */
+.story-cover-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+/* Pengaturan Gambar agar Responsif */
+.story-cover {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #3f475a;
+}
+
+.story-title-tags {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #e2e8f0;
+}
+
+/* Sektor Teks */
+.story-content {
+  flex: 1; /* Mengambil sisa ruang yang tersedia */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-heading {
+  margin: 0 0 8px 0;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.story-blurb {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* 💻 RESPONSIVE LOGIC: Untuk Layar Komputer / Tablet (Lebar > 600px) */
+@media (min-width: 600px) {
+  .story-card {
+    flex-direction: row; /* 💻 Ubah jadi berjejer ke samping (horizontal) */
+    align-items: flex-start;
+  }
+  
+  .story-cover-wrapper {
+    width: 150px; /* Kunci ukuran gambar di layar lebar */
+    text-align: left;
+  }
+}
