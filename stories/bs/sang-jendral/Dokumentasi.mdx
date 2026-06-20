@@ -1,32 +1,69 @@
-import {BookCard} from './components/Sinopsis.tsx';
+import {ImageCards, Card} from './components/Sinopsis.tsx';
 
+Untuk `Bootstrap 5` kita punya beberapa `Component` yang cukp menarik di sini.
 
-# Sang jendral
+Kita mulai dari yang gampang saja, sebuah `<ImageCards>` semacam ini:
 
-<BookCard />
+<ImageCards>
+    <Card image="/images/tiny/chaghan-temur.jpg" caption="Chaghan Temur" />
+    <Card image="/images/tiny/zhang-wuji.jpg" caption="Zhang Wuji" />
+    <Card image="/images/tiny/ah-xiu.jpg" caption="Ah Xiu" />
+    <Card image="/images/tiny/xiao-zhao.jpg" caption="Xiao Zhao" />
+</ImageCards>
 
-{/*
-<img src="/images/tiny/chaghan-temur.jpg" alt="Chaghan Temur" style="float:left;max-width:50px" />
-*/}
+<div class="container">
 
-# Prolog
-### *Henan, 1354*
+Kita membuatnya dengan sebuah fungsi yang bisa dipakai ulang:
 
-Angin sepoi-sepoi di perbukitan Songshan itu tidak menyejukkan hati orang-orang yang sedang berkumpul di salah satu puncaknya. Terutama sekali bagi Zhang Wuji, Zhao Min, dan juga semua prajurit yang dipimpin oleh Wang Baobao untuk menangkap ketua Ming Jiao itu. Mereka juga ingin memaksa Zhao Min ikut pulang ke tempat kediamannya sendiri, berpisah dengan Zhang Wuji. Tetapi mereka baru mendengar pengakuan gadis kecil itu, bahwa dirinya telah menjadi istri Zhang Wuji.
+```tsx
+import { type ComponentChildren, type VNode } from 'preact';
 
-Chaghan Temur mengelus jenggotnya yang lebat dengan tangan kiri, tenggelam dalam pikiran. Ia bukan orang yang mudah diintimidasi. Ia tahu pasti, putrinya sangat licik dan pintar. Sebenarnya, ia sama sekali tidak keberatan memiliki seorang menantu seperti Zhang Wuji, pemuda dua puluhan yang sedang berdiri di hadapannya saat ini, jika saja ia bisa menemukan cara untuk menghindari tuduhan dari Majelis Agung Dinasti Yuan bahwa keluarganya bermaksud memberontak melawan pemerintah, tetapi sayangnya, jalan keluar semacam itu tidak ada. Ia diam sampai lama sekali tanpa mengatakan sepatah kata pun.
+interface CardProps {
+    image: string;
+    caption: string;
+    children?: ComponentChildren;
+}
 
-<a class="btn btn-primary" href="/linear-pages/sang-jendral/wordpress/prolog">Prolog dari Wordpress</a>
+interface ImageCardsProps {
+    children: ComponentChildren;
+}
 
+export function Card({ image, caption, children }: CardProps) {
+    return (
+        <div className="card m-2">
+            <img src={image} alt={caption} />
+            {children && (
+                <div className="card-body">
+                    {children}
+                </div>
+            )}
+            <div className="card-footer">
+                <p className="text-center"><strong>{caption}</strong></p>
+            </div>
+        </div>
+    );
+}
 
----
+export function ImageCards({children}: ImageCardsProps) {
+    return (
+        <div className="d-flex p-2 bg-dark justify-content-center flex-wrap">
+            {children}
+        </div>
+    );
+}
+```
 
-Ini konten sementara untuk memeriksa efektivitas links:
+Fungsi ini bisa kita buat di dalam sebuah `.tsx` atau `.mdx`. Untuk menggunakannya dari dalam sebuah .mdx, kita cukup menuliskannya seperti ini:
 
-- [Home](/linear-pages/sang-jendral)
+```xml
+<ImageCards>
+    <Card image="/images/tiny/chaghan-temur.jpg" caption="Chaghan Temur" />
+    <Card image="/images/tiny/zhang-wuji.jpg" caption="Zhang Wuji" />
+    <Card image="/images/tiny/ah-xiu.jpg" caption="Ah Xiu" />
+    <Card image="/images/tiny/xiao-zhao-alamut.jpg" caption="Xiao Zhao" />
+</ImageCards>
+```
 
-
-<a class="btn btn-primary" href="/" target="_blank">Gunakan ini untuk kembali ke Home Page</a>
-
+</div>
 
 

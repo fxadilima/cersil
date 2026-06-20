@@ -1,6 +1,6 @@
 import { render } from 'preact';
 import './syntax.css';
-import { LocationProvider, Router, Route, useLocation } from 'preact-iso';
+import { LocationProvider, Router, Route, lazy } from 'preact-iso';
 import { useEffect } from "preact/hooks";
 
 export const NotFound = () => {
@@ -22,13 +22,8 @@ export const BackHome = () => {
 };
 
 export function App() {
-    const Docs = () => (
-        <div class="w3-container">
-            <h1>Dokumentasi Di Halaman HTML</h1>
-            <p><a class="btn btn-primary" href="/"><i class="fas fa-home"></i> HOME</a></p>
-            <p><a class="btn btn-secondary" href="/docs/mengawal-sang-naga">Mengawal Sang Naga</a></p>
-        </div>
-    );
+    const DialogFragments = lazy(() => import('../stories/w3css/sang-jendral/examples/DialogFragments.mdx'));
+    const Docs = lazy(() => import('../stories/bs/sang-jendral/Dokumentasi.mdx')); 
     const Book1 = () => (
         <div class="w3-container">
             <h1>Dokumentasi Mengawal Sang Naga</h1>
@@ -36,6 +31,7 @@ export function App() {
             <p><a class="btn btn-secondary" href="/docs">&larr; Kembali ke Dokumentasi</a></p>
         </div>
     );
+    
     return (
         <div>
             <div class="w3-content w3-padding-large">
@@ -44,6 +40,7 @@ export function App() {
                         <Route path="/" component={BackHome} />
                         <Route path="/docs" component={Docs} />
                         <Route path="/docs/mengawal-sang-naga" component={Book1} />
+                        <Route path="/docs/sang-jendral" component={DialogFragments} />
                         <Route default component={NotFound} />
                     </Router>
                 </LocationProvider>

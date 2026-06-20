@@ -3,6 +3,16 @@ import './syntax.css';
 import { LocationProvider, Router, Route, useLocation } from 'preact-iso';
 import { useEffect } from "preact/hooks";
 
+/*
+ * 
+<meta property="og:type" content="article">
+<!-- Tautan ke profil penulis atau nama pena -->
+<meta property="article:author" content="FX. Adi Lima"> 
+<!-- Kategori atau genre cerita -->
+<meta property="article:section" content="Cerita Silat">
+<!-- Kata kunci untuk pencarian -->
+<meta property="article:tag" content="Wuxia, Jin Yong, Narasi Paralel">
+ */
 export const NotFound = () => {
     const url = useLocation();
     const path = url.path;
