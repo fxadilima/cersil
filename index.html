@@ -4,16 +4,30 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Storybook | Home</title>
+        <title>Storybook | Tanah Perjanjian Di Ufuk Barat | Home</title>
         <link rel="stylesheet" href="https://w3schools.com/w3css/5/w3.css" />
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
         <script src="https://kit.fontawesome.com/acda0af544.js" crossorigin="anonymous"></script>
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://cersil-alessandra.netlify.app/">
+        <meta property="og:title" content="Cersil Alessandra">
+        <meta property="og:description" content="Nikmati pengalaman baru membaca cerita silat dengan metode narasi paralel interaktif modern.">
+        <meta property="og:image" content="https://cersil-alessandra.netlify.app/og-preview.jpg">
+
+        <!-- Twitter Meta Tags (Agar rapi juga saat dibagikan di X/Twitter) -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://cersil-alessandra.netlify.app/">
+        <meta name="twitter:title" content="Cersil Alessandra">
+        <meta name="twitter:description" content="Nikmati pengalaman baru membaca cerita silat dengan metode narasi paralel interaktif modern.">
+        <meta name="twitter:image" content="https://cersil-alessandra.netlify.app/og-preview.jpg">
     </head>
     <body class="w3-theme-d5">
         <div id="top"></div>
         <main id="main-content" class="w3-main"></main>
         <section id="books" class="w3-container">
+            <hr style="color:antiquewhite">
             <div class="w3-content">
+                <h2 class="w3-center">Books</h2>
                 <div class="w3-flex" style="gap:10px">
                     <div class="w3-card w3-flex-item">
                         <img class="w3-image"
@@ -48,6 +62,10 @@
                         &mdash; Albert Einstein
                     </p>
                 </div>
+                <div class="w3-bar-block" style="width:130px">
+                    <button class="w3-bar-item w3-button" onclick="testRender('render-target')">Test Click</button>
+                </div>
+                <div id="render-target"></div>
             </div>
         </section>
         <footer class="w3-theme-d5">

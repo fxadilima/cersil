@@ -77,3 +77,62 @@ export function Collapse({ children }: CollapseProps): ComponentChildren {
         </div>
     );
 }
+
+
+
+// Berikan definisi tipe data untuk Props komponen
+interface ParallelStoryProps {
+    phoneImgSrc?: string;
+    desktopImgSrc?: string;
+    targetUrl?: string;
+}
+/**
+ * Komponen untuk menampilkan pratinjau cerita paralel secara responsif.
+ * Menghasilkan dua kartu visual yang membandingkan tampilan Ponsel dan Desktop,
+ * serta menyediakan tautan langsung menuju demo interaktif atau bab terkait.
+ * 
+ * @example
+ * // Penggunaan dasar (menggunakan nilai default):
+ * <ParallelStory />
+ * 
+ * @example
+ * // Penggunaan kustom untuk bab baru:
+ * <ParallelStory 
+ *   phoneImgSrc="/images/pages/parallel-2-portrait.jpg"
+ *   desktopImgSrc="/images/pages/parallel-2.jpg"
+ *   targetUrl="/buku-2/part1" 
+ * />
+ * 
+ * @param props - Properti untuk mengonfigurasi gambar dan tautan komponen.
+ * @param props.phoneImgSrc - Jalur URL untuk gambar pratinjau versi ponsel. (Default: "/images/pages/parallel-1-portrait.jpg")
+ * @param props.desktopImgSrc - Jalur URL untuk gambar pratinjau versi desktop/laptop. (Default: "/images/pages/parallel-1.jpg")
+ * @param props.targetUrl - Alamat rute virtual tujuan ketika gambar diklik. (Default: "/buku-1/part1")
+ */
+export function ParallelStory({
+    phoneImgSrc = "/images/pages/parallel-1-portrait.jpg", // Nilai default jika tidak diisi
+    desktopImgSrc = "/images/pages/parallel-1.jpg",
+    targetUrl = "/buku-1/part1"
+}: ParallelStoryProps) {
+    return (
+        <div class="w3-flex" style="gap:10px">
+            <div class="w3-card-4 w3-padding w3-flex-item">
+                <a href={targetUrl} class="w3-btn w3-hover-none">
+                    <img src={phoneImgSrc}
+                        alt="Parallel Story Mobile View"
+                        style="width:100%"
+                        />
+                </a>
+                <h5 class="w3-center">Ponsel</h5>
+            </div>
+            <div class="w3-card-4 w3-padding w3-flex-item">
+                <a href={targetUrl} class="w3-btn w3-hover-none">
+                    <img src={desktopImgSrc}
+                        alt="Parallel Story Desktop View"
+                        style="width:100%"
+                        />
+                </a>
+                <h5 class="w3-center">Komputer Desktop/Laptop</h5>
+            </div>
+        </div>
+    );
+}

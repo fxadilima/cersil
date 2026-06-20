@@ -55,7 +55,6 @@ export function Navbar() {
 
 
 /*
-import {renderToString} from 'preact-render-to-string';
 
 export function MengawalSangNaga() {
     const [htmlString, setHtmlString] = useState<string>('');
@@ -106,7 +105,8 @@ export function App() {
             <Navbar />
             <div class="w3-container w3-padding-32">
                 <header class="w3-container w3-center">
-                    <h1>Cerita Silat</h1>
+                    <h1>Tanah Perjanjian</h1>
+                    <h3>Di Ufuk Barat</h3>
                 </header>
                 <div class="w3-content">
                     <LocationProvider>
@@ -155,3 +155,22 @@ render(<App />, document.getElementById('main-content')!);
 //import DocsKonten from '../blogs/w3css/Dokumentasi.mdx';
 //render(<DocsKonten />, document.getElementById('docs-content')!);
 
+//import {renderToString} from 'preact-render-to-string';
+
+export function testRender(targetName: string) {
+    const tgt = document.getElementById(targetName);
+    if (tgt === null || tgt === undefined) {
+        console.log(`[testRender]: The target ${targetName} is undefined or null!`);
+        return;
+    }
+    
+    import('../stories/w3css/sang-jendral/documents/Part1.mdx')
+        .then((result) => {
+            const MdxComponent = result.default;
+            render(<MdxComponent />, tgt!);
+        });
+}
+
+if (typeof window !== 'undefined') {
+    (window as any).testRender = testRender;
+}
