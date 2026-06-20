@@ -97,6 +97,31 @@ export function MengawalSangNaga() {
 }
 */
 
+export function RenderHighlight(path: string) {
+    const realPath = `../stories/w3css${path}`;
+    try {
+        import(/* @vite-ignore */ realPath)
+            .then((mdx) => {
+                const MdxComponent = mdx.default;
+                const targetDiv = document.getElementById('stories-highlight-content');
+                if (targetDiv !== null) {
+                    const Content = () => { return (
+                        <div class="w3-panel w3-border w3-round w3-padding">
+                            <button class="w3-btn w3-right" onClick={() => {
+                                targetDiv.innerHTML = '';
+                            }}>&times;</button>
+                            <MdxComponent />
+                        </div>
+                    )};
+                    render(<Content />, targetDiv);
+                }
+            });
+    }
+    catch (err) {
+        console.log(`[RenderHighlight]: ${err}`);
+    }
+}
+
 export function App() {
     const Book1 = lazy(() => import('../stories/w3css/mengawal-sang-naga/Home.mdx'));
     const Part1 = lazy(() => import('../stories/w3css/sang-jendral/documents/Part1.mdx'));
@@ -122,15 +147,17 @@ export function App() {
             <section class="w3-container w3-padding-large" id="stories">
                 <div class="w3-content">
                     <h2 class="w3-center">Stories Highlight</h2>
-                    <div class="w3-flex" style="gap:10px">
+                    <div class="w3-flex" style="justify-content:center;gap:5px">
                         <div class="w3-flex-item w3-card w3-round">
                             <img src="/images/medium/xiao-zhao-alamut-1355.jpg"
                                 alt="Alamut, 1355" 
                                 style="width:100%"
                                 class="w3-round" />
                             <div class="w3-container w3-padding w3-center">
-                                <a class="w3-button w3-round w3-theme-d4" 
-                                    href="/buku-1/part1">Alamut - Henan, 1355</a>
+                                <button class="w3-button w3-round w3-theme-d4" 
+                                    onClick={() => {
+                                        RenderHighlight("/sang-jendral/documents/Part1.mdx");
+                                    }}>Alamut - Henan, 1355</button>
                             </div>
                         </div>
                         <div class="w3-flex-item w3-card w3-round">
@@ -138,11 +165,14 @@ export function App() {
                                 alt="Guangming Ding" 
                                 style="width:100%" />
                             <div class="w3-container w3-padding w3-center">
-                                <h5>Puncak Terang</h5>
-                                <a href="/mengawal-sang-naga" class="w3-button w3-round">Dokumentasi</a>
+                                <button class="w3-button w3-round w3-theme-d4" 
+                                    onClick={() => {
+                                        RenderHighlight("/mengawal-sang-naga/documents/Part1.mdx");
+                                    }}>Goryeo, 1320</button>
                             </div>
                         </div>
                     </div>
+                    <div id="stories-highlight-content"></div>
                 </div>
             </section>
         </>
