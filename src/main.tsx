@@ -12,6 +12,13 @@ export const NotFound = () => (
   </div>
 );
 
+const ToDocs = () => {
+    useEffect(() => {
+        window.location.replace('/docs');
+    }, []);
+    return null;
+}
+
 export function Navbar() {
     // State untuk mengontrol buka/tutup menu hamburger
     const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +45,7 @@ export function Navbar() {
                     <li><a class="w3-button w3-hover-text-blue w3-hover-none" href="/sang-jendral">Sang Jendral</a></li>
                     <li><a class="w3-button w3-hover-text-blue w3-hover-none" href="/dinasti-ming">Dinasti Ming</a></li>
                 </ul>
-                <a href="#docs" class="w3-bar-item w3-button w3-hover-text-blue w3-hover-none">Dokumentasi</a>
+                <a href="/docs" class="w3-bar-item w3-button w3-hover-text-blue w3-hover-none">Dokumentasi</a>
                 <a href="#books" class="w3-bar-item w3-button w3-hover-text-blue w3-hover-none">Books</a>
                 <a href="#blogs" class="w3-bar-item w3-button w3-hover-text-blue w3-hover-none">Blogs</a>
             </div>
@@ -92,46 +99,50 @@ export function MengawalSangNaga() {
 */
 
 export function App() {
-    const ChapterHandler = lazy(() => import('./linear/w3css/ChapterHandler.tsx'));
-    const MengawalSangNaga = lazy(() => import('./linear/w3css/MengawalSangNaga.tsx'));
+    const Book1 = lazy(() => import('../stories/w3css/mengawal-sang-naga/Home.mdx'));
+    const Part1 = lazy(() => import('../stories/w3css/sang-jendral/documents/Part1.mdx'));
     return (
         <>
             <Navbar />
             <div class="w3-container w3-padding-32">
-                <LocationProvider>
-                    <Router>
-                        <Route path="/" component={Home} />
-                        <Route path="/mengawal-sang-naga" component={MengawalSangNaga} />
-                        <Route path="/mengawal-sang-naga/parts/:noBab" component={ChapterHandler} />
-                        <Route default component={NotFound} />
-                    </Router>
-                </LocationProvider>
+                <header class="w3-container w3-center">
+                    <h1>Cerita Silat</h1>
+                </header>
+                <div class="w3-content">
+                    <LocationProvider>
+                        <Router>
+                            <Route path="/" component={Home} />
+                            <Route path="/mengawal-sang-naga" component={Book1} />
+                            <Route path="/buku-1/part1" component={Part1} />
+                            <Route default component={NotFound} />
+                        </Router>
+                    </LocationProvider>
+                </div>
             </div>
             <section class="w3-container w3-padding-large" id="stories">
-                <hr />
-                <h1>Stories</h1>
-                <p>Bagian ini belum ditulis...</p>
-            </section>
-
-            <section class="w3-container w3-padding-large" id="books">
-                <hr />
-                <h1>Books</h1>
-                <p>Saat ini baru ada ini:</p>
-                <p><a href="/mengawal-sang-naga" class="w3-btn w3-round w3-blue">Mengawal Sang Naga</a></p>
-                <p><a href="/mengawal-sang-naga/parts/part1" class="w3-btn w3-round w3-blue">Test Part 1</a></p>
-            </section>
-
-            <section class="w3-container w3-margin-bottom" id="blogs">
-                <hr />
-                <h1>Blogs</h1>
-                <p>Bagian ini belum ditulis...</p>
-            </section>
-
-            <section class="w3-container w3-margin-bottom" id="docs">
-                <hr />
-                <h1>Dokumentasi</h1>
-                <div id="docs-content">
-                    <p>Bagian ini belum ditulis...</p>
+                <div class="w3-content">
+                    <h2 class="w3-center">Stories Highlight</h2>
+                    <div class="w3-flex" style="gap:10px">
+                        <div class="w3-flex-item w3-card w3-round">
+                            <img src="/images/medium/xiao-zhao-alamut-1355.jpg"
+                                alt="Alamut, 1355" 
+                                style="width:100%"
+                                class="w3-round" />
+                            <div class="w3-container w3-padding w3-center">
+                                <a class="w3-button w3-round w3-theme-d4" 
+                                    href="/buku-1/part1">Alamut - Henan, 1355</a>
+                            </div>
+                        </div>
+                        <div class="w3-flex-item w3-card w3-round">
+                            <img src="/images/small/guangming-ding.jpg"
+                                alt="Guangming Ding" 
+                                style="width:100%" />
+                            <div class="w3-container w3-padding w3-center">
+                                <h5>Puncak Terang</h5>
+                                <a href="/mengawal-sang-naga" class="w3-button w3-round">Dokumentasi</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

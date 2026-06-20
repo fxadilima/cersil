@@ -21,7 +21,9 @@ export default defineConfig({
     // 💡 Tetap pakai rolldownOptions kebanggaan kita
     rolldownOptions: {
       input: {
-        main: new URL("./index.html", import.meta.url).pathname
+        main: new URL("./index.html", import.meta.url).pathname,
+        docs: new URL('./docs/index.html', import.meta.url).pathname,
+        blogs: new URL("./blogs.html", import.meta.url).pathname
       }
     }
   }

@@ -9,7 +9,7 @@ export const NotFound = () => {
 
     useEffect(() => {
         if (path === '/') {
-            window.location.replace('/index.html');
+            window.location.replace('/');
         } else if (path === '/linear-pages/sang-jendral') {
             window.location.replace('/linear-pages/sang-jendral.html');
         } else {
@@ -22,7 +22,7 @@ export const NotFound = () => {
 
     // Berikan teks loading standar atau spinner, jangan murni null agar user tahu ada proses berjalan
     return (
-        <div className="w3-container w3-text-center">
+        <div className="container text-center">
             <p className="mt-2 text-muted">Mengarahkan pendekar ke jalan yang benar...</p>
         </div>
     );
@@ -40,7 +40,7 @@ export function App() {
         return (
             <div class="w3-container">
                 <h1>Books!</h1>
-                <p><a class="w3-btn w3-blue w3-round" href="/blogs">Ke Blogs (Tanpa embel-embel .html)</a></p>
+                <p><a class="w3-btn w3-blue w3-round" href="/blogs/bs">Ke Blogs (Tanpa embel-embel .html)</a></p>
                 <p><a class="w3-btn w3-blue w3-round" href="/blogs/docs">Ke Dokumentasi Blogs</a></p>
                 <p><a class="w3-btn w3-blue w3-round" href="/">Ke HOME (Tanpa membuka halaman baru)</a></p>
                 <p><a class="w3-btn w3-blue w3-round" href="/" target="_self" rel="external">Kembali ke HOME</a></p>
@@ -62,12 +62,10 @@ export function App() {
     };
     return (
         <div>
-            <img src="/images/cover.jpg" alt="Cover" style="width:100%" />
             <div class="w3-content w3-padding-large">
                 <LocationProvider>
                     <Router>
                         <Route path="/blogs" component={Blogs} />
-                        <Route path="/blogs.html" component={Blogs} />
                         <Route path="/blogs/docs" component={Docs} />
                         <Route path="/blogs/books" component={Books} />
                         <Route default component={NotFound} />
